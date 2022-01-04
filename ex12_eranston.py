@@ -2,8 +2,9 @@ def find_length_n_paths(n,board,words):
     
 
 
-
-    check_posibble_move(board , path)
+    current_path = []
+    path_lst = []
+    recursion_path_finder(n, board , current_path , path_lst , words)
 
 
 
@@ -24,6 +25,8 @@ def recursion_path_finder(n , board ,current_path,  path_lst , words):
 
 
     do_all_moves(n ,board , current_path , path_lst)
+
+    return []
 
     
 
